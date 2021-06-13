@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig', 
-    #'species.apps.SpeciesConfig',
+    'species.apps.SpeciesConfig',
 ]
 
 MIDDLEWARE = [
