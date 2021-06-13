@@ -22,16 +22,16 @@ def add_specie(request):
 
 def list_species(request):
     template_name = 'species/list_species.html'
-    species = Specie.objects.filter(user=request.user)
+    #species = Specie.objects.filter(user=request.user)
     context = {
-        'species': species
+        #'species': species
     }
     return render(request, template_name, context)
 
 def edit_specie(request, id_specie):
     template_name = 'species/add_species.html'
     context ={}
-    specie = get_object_or_404(Specie, id=id_specie, user=request.user)
+    specie = get_object_or_404(Specie, id=id_specie)#, user=request.user)
     if request.method == 'POST':
         form = SpecieForm(request.POST, instance=specie)
         if form.is_valid():
