@@ -4,7 +4,7 @@ from client.models import Client
 
 # Create your models here.
 
-class Product(models.Model):
+class Pets(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     name = models.CharField('Nome', max_length=50)
