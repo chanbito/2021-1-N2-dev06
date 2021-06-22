@@ -1,7 +1,7 @@
 from django import forms
-from .models import Specie
+from .models import Species
 
-class SpecieForm(forms.ModelForm):
+class SpeciesForm(forms.ModelForm):
     class Meta:
-        model = Specie
+        model = Species
         exclude = ()

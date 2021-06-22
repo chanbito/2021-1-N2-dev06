@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'core.apps.CoreConfig', 
     'species.apps.SpeciesConfig',
-    'employe.apps.EmployeConfig',
-    'client.apps.ClientConfig',
+    'employes.apps.EmployesConfig',
+    'clients.apps.ClientsConfig',
     'pets.apps.PetsConfig',
 ]
 

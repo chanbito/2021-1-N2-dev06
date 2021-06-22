@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class EmployeConfig(AppConfig):
+class EmployesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'employe'
+    name = 'employes'
     verbose_name='Contas de Funcionario'

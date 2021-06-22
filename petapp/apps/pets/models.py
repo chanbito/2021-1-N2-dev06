@@ -1,10 +1,10 @@
 from django.db import models
-from species.models import Specie
-from client.models import Client
+from species.models import Species
+from clients.models import Client
 
 # Create your models here.
 
-class Product(models.Model):
+class Pets(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     name = models.CharField('Nome', max_length=50)
@@ -15,7 +15,7 @@ class Product(models.Model):
         ('F', 'Feminino'),
     )
     gender = models.CharField('Genero', max_length=1, choices=GENDER_CHOICES)
-    specie = models.ForeignKey(Specie, on_delete=models.CASCADE)
+    specie = models.ForeignKey(Species, on_delete=models.CASCADE)
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
 
     class Meta:

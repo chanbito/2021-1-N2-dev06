@@ -1,12 +1,12 @@
 from django.db import models
-#from django.contrib.auth.models import User
+from django.utils.translation import activate
 
 # Create your models here.
 
-class Specie(models.Model):
+class Species(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     name = models.CharField('Especie', max_length=100)
-    #user = models.ForeignKey(User, on_delete=models.CASCADE) 
+    is_activate = models.BooleanField('Ativo')
     
     class Meta:
         verbose_name = 'Especie'
