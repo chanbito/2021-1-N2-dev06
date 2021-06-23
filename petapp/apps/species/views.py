@@ -22,9 +22,9 @@ def add_specie(request):
 
 def list_species(request):
     template_name = 'species/list_species.html'
-    #species = Specie.objects.filter(user=request.user)
+    species = Species.objects.filter()
     context = {
-        #'species': species
+        'species': species
     }
     return render(request, template_name, context)
 

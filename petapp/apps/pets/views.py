@@ -5,7 +5,7 @@ from .models import Pets
 
 # Create your views here.
 
-def add_ped(request):
+def add_pet(request):
     template_name = 'pets/add_pet.html'
     context = {}
     if request.method == 'POST':

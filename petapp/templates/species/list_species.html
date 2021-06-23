@@ -22,6 +22,7 @@
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
+                    <th scope="col">Ativo</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
                     </tr>
@@ -30,7 +31,15 @@
                     {% for specie in species %}
                         <tr>
                             <th scope="row">{{ specie.id }}</th>
-                            <td>{{ specie.Especie }}</td>
+                            <td>{{ specie.name }}</td>
+                            <td>
+                                {% if product.is_active == True %}
+                                    Ativo
+                                {% endif %}
+                                {% if product.is_active == False %}
+                                    Inativo
+                                {% endif %}
+                            </td>
                             <td>
                                 <a href="{% url 'species:edit_specie' specie.id %}" class="btn btn-primary btn-sm">Editar</a>
                             </td>
