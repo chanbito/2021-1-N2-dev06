@@ -9,7 +9,7 @@ from .forms import UserForm, UserChangeInformationForm
 # Create your views here.
 
 def add_user(request):
-    template_name = 'employe/add_user.html'
+    template_name = 'employes/add_user.html'
     context = {}
     if request.method =='POST':
         form = UserForm(request.POST)
@@ -17,15 +17,15 @@ def add_user(request):
             f = form.save(commit=False)
             f.set_password(f.password)
             f.save()
-            return redirect('employe:user_login')
+            return redirect('employes:user_login')
         else:
-            return redirect('employe:add_user')
+            return redirect('employes:add_user')
     form = UserForm()
     context['form'] = form
     return render(request, template_name, context)   
 
 def user_login(request):
-    template_name = 'employe/user_login.html'
+    template_name = 'employes/user_login.html'
     if request.method =='POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -34,15 +34,15 @@ def user_login(request):
             login(request, user)
             return redirect(request.GET.get('next', '/'))
         else:
-            return redirect('employe:user_login')
+            return redirect('employes:user_login')
     return render(request, template_name, {})
 
 def user_logout(request):
     logout(request)
-    return redirect('employe:user_login')
+    return redirect('employes:user_login')
 
 def user_change_password(request):
-    template_name = 'employe/user_change_password.html'
+    template_name = 'employes/user_change_password.html'
     context = {}
     if request.method == 'POST':
         form = PasswordChangeForm(user=request.user, data=request.POST)
@@ -50,13 +50,13 @@ def user_change_password(request):
             form.save()
             update_session_auth_hash(request, form.user)
         else:
-            return redirect('employe:user_login')
+            return redirect('employes:user_login')
     form = PasswordChangeForm(user=request.user)
     context['form'] = form
     return render(request, template_name, context)
 
 def user_change_information(request, username):
-    template_name = 'employe/user_change_information.html'
+    template_name = 'employes/user_change_information.html'
     context = {}
     user = User.objects.get(username=username)
     if request.method == 'POST':
