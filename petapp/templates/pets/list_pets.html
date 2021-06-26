@@ -37,10 +37,10 @@
                             <th scope="row">{{ pet.id }}</th>
                             <td>{{ pet.name }}</td>
                             <td>
-                                {% if product.is_active == True %}
+                                {% if pet.is_active == True %}
                                     Ativo
                                 {% endif %}
-                                {% if product.is_active == False %}
+                                {% if pet.is_active == False %}
                                     Inativo
                                 {% endif %}
                             </td>

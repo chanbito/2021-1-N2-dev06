@@ -33,10 +33,10 @@
                             <th scope="row">{{ specie.id }}</th>
                             <td>{{ specie.name }}</td>
                             <td>
-                                {% if product.is_active == True %}
+                                {% if specie.is_active == True %}
                                     Ativo
                                 {% endif %}
-                                {% if product.is_active == False %}
+                                {% if specie.is_active == False %}
                                     Inativo
                                 {% endif %}
                             </td>

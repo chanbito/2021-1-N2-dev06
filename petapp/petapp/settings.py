@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'employes.apps.EmployesConfig',
     'clients.apps.ClientsConfig',
     'pets.apps.PetsConfig',
+    #'services.apps.ServicesConfig'
 ]
 
 MIDDLEWARE = [

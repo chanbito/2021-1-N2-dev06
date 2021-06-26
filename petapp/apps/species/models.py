@@ -6,7 +6,7 @@ from django.utils.translation import activate
 class Species(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     name = models.CharField('Especie', max_length=100)
-    is_activate = models.BooleanField('Ativo')
+    is_active = models.BooleanField('Ativo')
     
     class Meta:
         verbose_name = 'Especie'

@@ -22,7 +22,7 @@ def list_clients(request):
     template_name = 'clients/list_clients.html'
     clients = Client.objects.filter()
     context = {
-        'client': clients,
+        'clients': clients,
     }
     return render(request, template_name, context)
 

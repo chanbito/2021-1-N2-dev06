@@ -6,7 +6,7 @@ from .models import Species
 # Create your views here.
 
 def add_specie(request):
-    template_name = 'Species/add_specie.html'
+    template_name = 'species/add_specie.html'
     context = {}
     if request.method == 'POST':
         form = SpeciesForm(request.POST)
@@ -29,7 +29,7 @@ def list_species(request):
     return render(request, template_name, context)
 
 def edit_specie(request, id_specie):
-    template_name = 'species/add_species.html'
+    template_name = 'species/add_specie.html'
     context ={}
     specie = get_object_or_404(Species, id=id_specie)#, user=request.user)
     if request.method == 'POST':
@@ -43,8 +43,5 @@ def edit_specie(request, id_specie):
 
 def delete_specie(request, id_specie):
     specie = Species.objects.get(id=id_specie)
-    if specie.user == request.user:
-        specie.delete()
-    else:
-        return redirect('core:home')
+    specie.delete()
     return redirect('species:list_species')
