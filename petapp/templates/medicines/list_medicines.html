@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Lista de Medicamentos - {{ block.super }}
+
+{% endblock title %}
+
+{% block body %}
+
+    <div class="container">
+        <br />
+        <h5><b>Lista de Medicamentos</b></h5>
+        <div class="row">
+            <div class ="col-md-12">
+                <br />
+                    <a href="{% url 'medicines:add_medicine' %}">Cadastro de novo produto</a>
+                <br />
+                <br />
+                <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Descricao</th>
+                    <th scope="col">Data de fabricacao</th>
+                    <th scope="col">Ativo</th>
+                    <th scope="col">Bula</th>
+                    <th scope="col">Empregado</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for medicine in medicines %}
+                        <tr>
+                            <th scope="row">{{ medicine.id }}</th>
+                            <td>{{ medicine.name }}</td>
+                            <td>{{ medicine.description }}</td>
+                            <td>{{ medicine.date_fabrication }}</td>
+                            <td>
+                                {% if medicine.is_active == True %}
+                                    Ativo
+                                {% endif %}
+                                {% if medicine.is_active == False %}
+                                    Inativo
+                                {% endif %}
+                            </td>
+                            <td>
+                                <a href="{{ medicine.package.url }}" >{{ medicine.package.url }}</a>
+                            </td>
+                            <td>{{ medicine.employe }}</td>
+                            <td>
+                                <a href="{% url 'medicines:edit_medicine' medicine.id %}" class="btn btn-primary btn-sm">Editar</a>
+                            </td>
+                            <td>    
+                                <a href="{% url 'medicines:delete_medicine' medicine.id %}" class="btn btn-danger btn-sm ">Excluir</a>
+                            </td>
+                        </tr> 
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

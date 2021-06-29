@@ -1,0 +1,83 @@
+
+
+Os warforged foram construídos para lutar na Última Guerra (nota do Iorvunon: Última Guerra foi uma batalha que durou séculos e abalou todo o mundo de Eberron). Enquanto que os primeiros warforged eram autômatos irracionais, a Casa Cannith investiu diversos recursos para aprimorar esses soldados de aço (nota do Iorvunon: a Casa Cannith é uma das 13 casas da Marca do Dragão. É uma família de engenheiros e artesãos que possuem a Marca da Criação, e dominam o mercado de tecnologia e construção em Eberron). Uma descoberta inesperada produziu soldados racionais, causando o surgimento pro que alguns, com má vontade, aceitam como nova espécie. Warforged são feitos de madeira e metal, mas eles podem sentir dor e emoções. Construídos como armas, eles precisam agora achar um propósito além da guerra. Um warforged pode ser um aliado leal, um assassino de sangue frio, ou um visionário em busca de sentido.
+
+Aço e Pedras Vivos
+
+Warforged são constituídos de uma mistura de materiais orgânicos e inorgânicos. Cordões semelhantes a raízes infundidos com fluídos químicos servem como músculos, presos em volta de vigas de aço, madeira escura ou pedra. Placas blindadas formam uma proteção exterior e reforçam as articulações. Warforged compartilham um design geral de rosto, com um queixo articulado e olhos de cristal embutidos embaixo de sobrancelhas reforçadas. Além desses elementos comuns no design dos warforged, os materiais e formas específicos variam de acordo com o propósito pelo qual foram designados. Embora eles sejam fabricados, warforged são humanoides vivos. Descansar, magias de cura, a perícia Medicina, todas providenciam os mesmos benefícios pros warforged como pra qualquer outro humanoide.
+
+Personalidade Warforged
+
+Os warforged foram construídos para servir e lutar. Por boa parte da sua existência, os warforged tinham uma função claramente definida e eram encorajados para focar unicamente nesse papel. O Tratado de Thronehold os deu liberdade, mas muitos ainda lutam tanto para achar um lugar no mundo pós-guerra como para se relacionar com as criaturas que o criaram (nota do Iorvunon: o Tratado de Thronehold foi o que findou a Última Guerra buscando a paz entre as nações. Vale ressaltar que a guerra continua por baixo dos panos com espionagem; Eberron se encontra num estado de guerra fria). Os warforged comuns demonstram poucas emoções. Muitos warforged adotam um propósito concreto – como proteger aliados, completar um contrato ou explorar uma região – e adotam tal tarefa como já faziam na guerra. Contudo, existem warforged que se deleitam em explorar seus sentimentos, sua liberdade, e seus relacionamentos com outros. A maioria dos warforged não têm interesse em religião, mas alguns adoram fé e misticismo, procurando um propósito maior e sentidos mais profundos. Os warforged comuns possuem um formato corporal sem sexo. Alguns warforged ignoram o conceito de identidade de gênero, enquanto outros adotam um. Quanto mais um warforged desenvolve sua individualidade, maior a chance dele modificar o próprio corpo, procurando um artífice que customize a aparência de seu rosto, membros e blindagem (nota do Iorvunon: Artífice é a nova classe de D&D feita pra Eberron. São engenheiros mágicos, de forma bem resumida).
+
+Peculiaridades dos Warforged
+
+Os warforged de vez em quando apresentam um ou dois traços de personalidade exóticos, dado o quão novo eles são no mundo. A Tabela das Peculiaridades Warforged contém alguns exemplos.
+
+(nota do Iorvunon: role um 1d8, e veja qual peculiaridade você tem de acordo com o resultado na tabela. Ou apenas escolha qual dessas você quer. Ou crie uma nova)
+
+1d8 – Peculiaridades Warfoged
+
+1 – Você analisa – em voz alta – a ameaça em potencial aparente em qualquer criatura que você encontra.
+
+2 – Você eventualmente interpreta mal sugestões emocionais
+
+3 – Você é um defensor feroz dos seus amigos
+
+4 – Você tenta aplicar a disciplina dos tempos de guerra em toda situação
+
+5 – Você não sabe como filtrar seus sentimentos e é propenso a explosões dramáticas de sentimentos
+
+6 – Você não entende vestimentas além da utilidade e assume que elas denotam a função de uma pessoa
+
+7 – Você é obcecado com sua aparência e você constantemente se aprimora e refina
+
+8 –Guerra é a única coisa que faz sentido pra você, e você está sempre a procura de uma luta
+
+Nomes Warforged
+
+A maioria dos warforged são atribuídos com designações numéricas para utilização no serviço militar. Muitos deles adoram apelidos, geralmente dados pelos seus camaradas. Como indivíduos independentes, alguns têm escolhido novos nomes como uma forma de expressar sua trajetória na vida. Poucos pegam nomes humanos, geralmente nomes de amigos ou mentores mortos.
+
+Nomes Warforged: Anchor, Banner, Bastion, Blade, Blue, Bow, Cart, Church, Crunch, Crystal, Dagger, Dent, Five, Glaive, Hammer, Iron, Lucky, Mace, Oak, Onyx, Pants, Pierce, Red, Rod, Rusty, Scout, Seven, Shield, Slash, Smith, Spike, Temple, Vault, Wall
+
+(nota do Iorvunon: todos os nomes são substantivos que representam algum objeto. Por opção estética eles não serão traduzidos, porém é recomendável seguir a regra de usar nomes de objetos, seja em inglês ou português)
+
+Traços Raciais dos Warforged
+
+Seu personagem warforged possui os seguintes traços raciais. Alguns dos traços oferecem uma escolha; considere como sua escolha reflete o propósito pelo qual seu personagem foi construído.
+
+:black_small_square: Aumento no Valor de Habilidade: sua Constituição aumenta em 2, e outra habilidade à sua escolha aumenta em 1
+
+:black_small_square: Idade: Um warforged comum possui entre dois a trinta anos de idade. O tempo de vida máximo de um warforged permanece um mistério; até agora, warforgeds não desmontaram sinais de deterioramento devido à idade. Você é imune contra magias de envelhecimento.
+
+:black_small_square: Tendência: A maior parte dos warforged sentem conforto na ordem e na disciplina, tendendo à lei e neutralidade. Mas alguns imitam a moralidade, ou a falta dela, das criaturas que eles servem.
+
+:black_small_square: Tamanho: Seu tamanho é Médio
+
+(nota do Iorvunon: o livro de Eberron apresenta fórmulas para calcular aleatóriamente seu peso e altura, porém essas fórmulas não serão traduzidas devido à incompatibilidade do sistema métrico usado. Warforged tendem a ser mais altos e pesados do que humanos comuns, não excedendo 2m de altura)
+
+:black_small_square: Deslocamento: Seu deslocamento base de caminhada é 9m.
+
+:black_small_square: Resiliência Constructa: Você foi criado para ter uma notável fortitude, representada pelos seguintes benefícios:
+
+- Você tem vantagens em salvaguardas contra envenenamento, e você tem resistência contra dano de veneno
+
+- Você não precisa comer, beber e respirar
+
+- Você é imune à doenças
+
+- Você não precisa dormir, e magias não conseguem te adormecer
+
+:black_small_square: Descanso do Sentinela: Quando você faz um descanso longo, você deve gastar no mínimo seis horas num estado imóvel e inativo, ao invés de dormir. Nesse estado, você aparenta estar inerte, mas não te torna inconsciente, e você pode ver e ouvir normalmente.
+
+:black_small_square: Proteção Integrada: Seu corpo possui camadas defensivas Incorporadas, que podem ser aprimoradas com armadura:
+
+- Você ganha um bônus de +1 na sua Classe de Armadura
+
+- Você pode vestir apenas armaduras que você possui proficiência. Para vestir uma armadura, você deve incorporar ela no seu corpo durante 1 hora, tempo no qual você se mantém em contato com a armadura. Para despir a armadura, você deve passar 1 hora removendo-a. Você pode descansar enquanto veste ou tira sua armadura dessa forma.
+
+- Enquanto você vive, sua armadura não pode ser removida do seu corpo contra sua vontade.
+
+:black_small_square: Design Especializado: Você ganha proficiência em uma perícia e em uma ferramenta à sua escolha.
+
+:black_small_square: Idiomas: você pode falar, ler e escrever em Comum e outra língua à sua escolha

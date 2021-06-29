@@ -13,10 +13,6 @@
         <h5><b>Lista de Pets</b></h5>
         <div class="row">
             <div class ="col-md-12">
-                <br />
-                    <a href="{% url 'pets:add_pet' %}">Cadastro de novo Pet</a>
-                <br />
-                <br />
                 <table class="table table-hover">
                 <thead>
                     <tr>
@@ -50,11 +46,14 @@
                                 <img src="{{ pet.photo.url }}" width="50" height="50">
                             </td>
                             <td>
-                                <a href="{% url 'pet:edit_pet' pet.id %}" class="btn btn-primary btn-sm">Editar</a>
+                                <a href="{% url 'pets:edit_pet' pet.id %}" class="btn btn-primary btn-sm">Editar</a>
                             </td>
                             <td>    
-                                <a href="{% url 'pet:delete_pet' pet.id %}" class="btn btn-danger btn-sm ">Excluir</a>
+                                <a href="{% url 'pets:delete_pet' pet.id %}" class="btn btn-danger btn-sm ">Excluir</a>
                             </td>
+                            <td>   
+                                <a href="{% url 'services:add_service' pet.id%}" class="btn btn-danger btn-sm ">Adicionar Servico</a>
+                           </td>
                         </tr> 
                     {% endfor %}
                 </tbody>

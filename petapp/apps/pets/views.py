@@ -1,8 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
-
 from .forms import PetForm
 from .models import Pets, Client
-
 
 # Create your views here.
 
@@ -23,26 +21,26 @@ def add_pet(request, id_client):
 
 def list_pets(request):
     template_name = 'pets/list_pets.html'
-    products = Pets.objects.filter()
+    pets = Pets.objects.filter()
     context = {
-        'pets': products
+        'pets': pets
     }
     return render(request, template_name, context)
 
 def edit_pet(request, id_pet):
     template_name = 'pets/add_pet.html'
     context ={}
-    product = get_object_or_404(Pets, id=id_pet)
+    pet = get_object_or_404(Pets, id=id_pet)
     if request.method == 'POST':
-        form = PetForm(request.POST, request.FILES,  instance=product)
+        form = PetForm(request.POST, request.FILES,  instance=pet)
         if form.is_valid():
             form.save()
             return redirect('pets:list_pets')
-    form = PetForm(instance=product)
+    form = PetForm(instance=pet)
     context['form'] = form
     return render(request, template_name, context)
 
 def delete_pet(request, id_pet):
-    product = Pets.objects.get(id=id_pet)
-    product.delete()
+    pet = Pets.objects.get(id=id_pet)
+    pet.delete()
     return redirect('pets:list_pets')

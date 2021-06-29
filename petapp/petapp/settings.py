@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'employes.apps.EmployesConfig',
     'clients.apps.ClientsConfig',
     'pets.apps.PetsConfig',
-    #'services.apps.ServicesConfig'
+    'services.apps.ServicesConfig',
+    'medicines.apps.MedicinesConfig'
 ]
 
 MIDDLEWARE = [
@@ -79,8 +80,6 @@ TEMPLATES = [
         },
     },
 ]
-MEDIA_URL = '/media/' 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
 
 WSGI_APPLICATION = 'petapp.wsgi.application'
 
@@ -136,11 +135,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+MEDIA_URL = '/media/' 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-FILES_URL = '/media/' 
-FILES_ROOT = os.path.join(BASE_DIR, 'media') 
 
 STATICFILES_DIRS = [ 
     os.path.join(BASE_DIR, 'staticfiles'), 

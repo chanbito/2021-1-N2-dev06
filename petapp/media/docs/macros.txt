@@ -1,0 +1,23 @@
+Ataque
+/em Ataca com [[1d20+{Bonus|0}]]
+AtaqueDescuidado
+&{template:default}{{Ataque Desvantagem}}{{Ataca com [[2d20kh1+{Bonus|0}]]}}
+entidoDePerigo-Teste
+&{template:default}{{Sentido de Perigo}}{{Usando seus sentidos aprimorados, Nemurin tenta desviar-se rolando [[2d20kh1]]}}
+DanoMachado
+/em Ataca Causando [[1d12+3+?{Bônus furia|2}]] de Dano no Machado
+DanoMachadinha
+/em Ataca Causando [[1d6+?{Bônus|3}]] de Dano com sua Machadinha 
+
+Ataque Besta Leve
+&{template:atkdmg} {{mod=+3}} {{rname=Besta Leve}} {{r1= [[1d20+3]]}}  {{r2= [[1d20+3]]}} {{?{vantagem?|Normal,normal=1|Vantagem,advantage=1|Desvantagem,disadvantage=1}}} {{attack=1}} {{range=24/96 metros}} {{damage=1}} {{dmg1flag=1}} {{dmg1=[[d8+1]]}} {{dmg1type=Perfurante}} {{crit1=[[d8]]}}
+
+DanoMachadinha
+&{template:atkdmg} {{mod=+3}} {{rname=Machadinha}} {{r1= [[1d20+3]]}} {{r2= [[1d20+3]]}} {{?{vantagem?|Normal,normal=1|Vantagem,advantage=1|Desvantagem,disadvantage=1}}} {{attack=1}} {{range=6/18 metros}} {{damage=1}} {{dmg1flag=1}} {{dmg1=[[d6+1]]}} {{dmg1type=Perfurante}} {{crit1=[[d6]]}}
+
+Bordão
+&{template:atkdmg} {{mod=?{Mod|2}}} {{rname=Bordão}} {{r1= [[1d0+?{Mod|2}]]}}  {{r2= [[1d20+?{Mod|2}]]}} {{?{vantagem?|Normal,normal=1|Vantagem,advantage=1|Desvantagem,disadvantage=1}}} {{attack=1}} {{Melee}} {{damage=1}} {{dmg1flag=1}} {{dmg1=[[?{Dado?|d6|d8}]]}} {{dmg1type=Perfurante}} {{crit1=[[?{Dado?|d6|d8}]]}}
+
+Iniciativa
+/emas @{selected|token_name} rolou [[1d20+?{modifier|0}&{tracker}]] para iniciativa
+

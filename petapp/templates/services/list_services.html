@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Lista de Servicos - {{ block.super }}
+
+{% endblock title %}
+
+{% block body %}
+
+    <div class="container">
+        <br />
+        <h5><b>Lista de Servicos</b></h5>
+        <div class="row">
+            <div class ="col-md-12">
+            <br />
+                <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Pet</th>
+                    <th scope="col">Preco Total</th>
+                    <th scope="col">Itens de pedido</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for service in services %}
+                        <tr>
+                            <th scope="row">{{ service.id }}</th>
+                            <td>{{ service.status }}</td>
+                            <td>
+                                {% for pet in pets %}
+                                    {% if service.pet_id == pet.id %}
+                                        {{ pet.name }}
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                            <td>R$ {{ service.total_price }}</td>
+                            <td>
+                                <a href="{% url 'services:add_service_item' service.id %}" class="btn btn-primary btn-sm">Adicionar Medicamento</a>
+                                <br /><br />
+                                {% for service_item in service_items %}
+                                    {% if service_item.service_id == service.id %}
+                                        Produto: {{ service_item.product}}<br /> 
+                                        Quantidade: {{ service_item.quantity}}<br />
+                                        Valor Unitario: R$ {{ service_item.unitary_price }}<br />
+                                        <a href="{% url 'services:delete_service_item' service_item.id %}">Excluir Item</a><br /><br />
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                            <td>
+                                <a href="{% url 'services:delete_service' service.id %}" class="btn btn-danger btn-sm ">Excluir</a>
+                            </td>
+                        </tr> 
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
