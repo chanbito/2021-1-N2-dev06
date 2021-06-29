@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import ServiceForm, ServiceItemForm
 from .models import Service, ServiceItem, Medicine, Pets
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+@login_required(login_url='/employes/login/')
 def add_service(request, id_pet):
     template_name = 'services/add_service.html'
     context = {}
@@ -20,6 +22,7 @@ def add_service(request, id_pet):
     context['form'] = form
     return render(request, template_name, context)
 
+@login_required(login_url='/employes/login/')
 def list_services(request):
     template_name = 'services/list_services.html'
     services = Service.objects.filter(employe_id=request.user)
@@ -34,11 +37,13 @@ def list_services(request):
     }
     return render(request, template_name, context)
 
+@login_required(login_url='/employes/login/')
 def delete_service(request, id_service):
     order = Service.objects.get(id=id_service)
     order.delete()
     return redirect('services:list_services')
 
+@login_required(login_url='/employes/login/')
 def add_service_item(request, id_service):
     template_name = 'services/add_service_item.html'
     context = {}
@@ -55,6 +60,7 @@ def add_service_item(request, id_service):
     context['form'] = form
     return render(request, template_name, context)
 
+@login_required(login_url='/employes/login/')
 def delete_service_item(request, id_service_item):
     serviceitem = ServiceItem.objects.get(id=id_service_item)
     serviceitem.delete()
