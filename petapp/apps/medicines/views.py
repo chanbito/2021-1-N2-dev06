@@ -5,7 +5,7 @@ from .models import Medicine, User
 
 # Create your views here.
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def add_medicine(request):
     template_name = 'medicines/add_medicine.html'
     context = {}
@@ -20,7 +20,7 @@ def add_medicine(request):
     context['form'] = form
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def list_medicines(request):
     template_name = 'medicines/list_medicines.html'
     medicine = Medicine.objects.filter()
@@ -29,7 +29,7 @@ def list_medicines(request):
     }
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def edit_medicine(request, id_medicine):
     template_name = 'medicines/add_medicine.html'
     context ={}
@@ -43,7 +43,7 @@ def edit_medicine(request, id_medicine):
     context['form'] = form
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def delete_medicine(request, id_medicine):
     medicine = Medicine.objects.get(id=id_medicine)
     medicine.delete()

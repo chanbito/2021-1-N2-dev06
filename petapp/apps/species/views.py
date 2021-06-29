@@ -5,7 +5,7 @@ from .models import Species
 
 # Create your views here.
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def add_specie(request):
     template_name = 'species/add_specie.html'
     context = {}
@@ -21,7 +21,7 @@ def add_specie(request):
     context['form'] = form
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def list_species(request):
     template_name = 'species/list_species.html'
     species = Species.objects.filter()
@@ -30,7 +30,7 @@ def list_species(request):
     }
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def edit_specie(request, id_specie):
     template_name = 'species/add_specie.html'
     context ={}
@@ -44,7 +44,7 @@ def edit_specie(request, id_specie):
     context['form'] = form
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def delete_specie(request, id_specie):
     specie = Species.objects.get(id=id_specie)
     specie.delete()

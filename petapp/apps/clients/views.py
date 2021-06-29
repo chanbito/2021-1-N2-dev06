@@ -4,7 +4,7 @@ from .forms import ClientForm
 from .models import Client
 # Create your views here.
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def add_client(request):
     template_name = 'clients/add_client.html'
     context = {}
@@ -19,7 +19,7 @@ def add_client(request):
     context['form'] = form
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def list_clients(request):
     template_name = 'clients/list_clients.html'
     clients = Client.objects.filter()
@@ -28,7 +28,7 @@ def list_clients(request):
     }
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def edit_client(request, id_client):
     template_name = 'clients/add_client.html'
     context ={}
@@ -42,13 +42,13 @@ def edit_client(request, id_client):
     context['form'] = form
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def delete_client(request, id_client):
     client = Client.objects.get(id=id_client)
     client.delete()
     return redirect('client:list_clients')
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def search_clients(request):
     template_name = 'clients/list_clients.html'
     query = request.GET.get('query')

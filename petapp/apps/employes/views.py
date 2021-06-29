@@ -37,12 +37,12 @@ def user_login(request):
             return redirect('employes:user_login')
     return render(request, template_name, {})
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def user_logout(request):
     logout(request)
     return redirect('employes:user_login')
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def user_change_password(request):
     template_name = 'employes/user_change_password.html'
     context = {}
@@ -57,7 +57,7 @@ def user_change_password(request):
     context['form'] = form
     return render(request, template_name, context)
 
-@login_required(login_url='/employes/login/')
+@login_required(login_url='/funcionarios/login/')
 def user_change_information(request, username):
     template_name = 'employes/user_change_information.html'
     context = {}
